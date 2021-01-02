@@ -8,9 +8,10 @@
 </template>
 
 <script>
-    import Header from "./Header"
-    import Footer from "./Footer"
-    import SiderMenu from "./SiderMenu"
+    import Header from './Header'
+    import Footer from './Footer'
+    import SiderMenu from './SiderMenu'
+
 export default {
     components:{
         Header,

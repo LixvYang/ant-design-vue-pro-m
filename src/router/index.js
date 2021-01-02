@@ -18,13 +18,13 @@ const routes = [
       },
       {
         path:"/user/login",
-        name:"Login",
+        name:"login",
         component: () =>
       import(/* webpackChunkName: "user" */ "../views/User/Login"),
       },
       {
         path:"/user/register",
-        name:"Register",
+        name:"register",
         component: () =>
       import(/* webpackChunkName: "user" */ "../views/User/Register"),
       }
@@ -83,13 +83,13 @@ const routes = [
           }
         ]
       },
-      {
-      path: "*",
-      name: "404",
-      component: NotFound
-      }
     ]
   },
+  {
+    path: "*",
+    name: "404",
+    component: NotFound
+    }
 ];
 
 
