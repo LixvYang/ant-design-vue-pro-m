@@ -1,6 +1,6 @@
 <template>
     <div>
-        Footer
+        ©2021 Created by Lixin_Yang
     </div>
 </template>
 
