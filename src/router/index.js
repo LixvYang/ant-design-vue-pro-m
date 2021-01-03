@@ -86,10 +86,10 @@ const routes = [
     ]
   },
   {
-    path: "*",
-    name: "404",
-    component: NotFound
-    }
+      path: "*",
+      name: "404",
+      component: NotFound
+      }
 ];
 
 
@@ -99,7 +99,9 @@ const router = new VueRouter({
   routes
 });
 router.beforeEach((to, form, next) => {
-  NProgress.start();
+  if(to.path !== form.path){
+    NProgress.start();
+  }
   next();
 });
 
